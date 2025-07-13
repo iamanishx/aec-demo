@@ -1,0 +1,62 @@
+# Build directories
+build/
+out/
+bin/
+lib/
+
+# Visual Studio files
+.vs/
+*.vcxproj.user
+*.vcxproj.filters
+*.sln.docstates
+*.suo
+*.user
+*.userosscache
+*.sln.docstates.json
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+CTestTestfile.cmake
+cmake-build-*/
+
+# Executables
+*.exe
+*.dll
+*.pdb
+
+# Object files
+*.obj
+*.o
+*.lo
+*.slo
+*.ko
+
+# Libraries
+*.lib
+*.a
+*.la
+*.so
+*.dylib
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# vcpkg (if you want to exclude it from repo)
+# Uncomment the next line if you don't want to include vcpkg in your repo
+# vcpkg/
