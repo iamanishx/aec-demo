@@ -91,21 +91,6 @@ const int FILTER_LENGTH = FRAME_SIZE * 10; // Echo tail length (100ms)
 │ System Audio│───▶│              │
 │ Reference   │    │              │
 └─────────────┘    └──────────────┘
-```
-
-## File Structure
-
-```
-demo/
-├── main.cpp           # Main application source
-├── CMakeLists.txt     # CMake build configuration
-├── README.md          # This file
-└── build/
-    └── Release/
-        ├── aec_demo.exe      # Compiled executable
-        ├── portaudio.dll     # PortAudio library
-        └── libspeexdsp.dll   # SpeexDSP library
-```
 
 ## Troubleshooting
 
@@ -129,18 +114,6 @@ demo/
 - Currently uses default input/output devices only
 - System audio capture may require specific loopback device setup
 - No GUI for real-time parameter adjustment
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
-
-## License
-
-[Specify your license here]
 
 ## Acknowledgments
 

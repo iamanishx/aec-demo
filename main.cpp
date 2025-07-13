@@ -128,7 +128,7 @@ int main() {
         return 1;
     }
 
-    // Initialize Speex Echo Canceller & Preprocessor
+    // Initializing Speex Echo Canceller & Preprocessor
     SpeexEchoState *echo = speex_echo_state_init(FRAME_SIZE, FILTER_LENGTH);
     SpeexPreprocessState *preprocess = speex_preprocess_state_init(FRAME_SIZE, SAMPLE_RATE);
     speex_preprocess_ctl(preprocess, SPEEX_PREPROCESS_SET_ECHO_STATE, echo);
@@ -148,10 +148,10 @@ int main() {
 
         // Run echo cancellation
         speex_echo_cancellation(echo, micBuf.data(), refBuf.data(), outBuf.data());
-        // Optional: denoise further
+        // denoise
         speex_preprocess_run(preprocess, outBuf.data());
 
-        // Play cleaned mic audio
+        // Playing cleaned mic audio
         Pa_WriteStream(outStream, outBuf.data(), FRAME_SIZE);
     }
 
