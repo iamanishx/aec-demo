@@ -91,6 +91,8 @@ const int FILTER_LENGTH = FRAME_SIZE * 10; // Echo tail length (100ms)
 │ System Audio│───▶│              │
 │ Reference   │    │              │
 └─────────────┘    └──────────────┘
+```
+
 
 ## Troubleshooting
 
